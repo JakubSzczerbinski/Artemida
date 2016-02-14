@@ -4,7 +4,12 @@
 
 #ifndef ARTEMIDA_UTILS_H
 #define ARTEMIDA_UTILS_H
-
+//#define DEBUG
+#ifdef DEBUG
+#define printd printf
+#else
+#define printd if (1) {} else printf
+#endif
 #include <stdlib.h>
 
 typedef struct string{

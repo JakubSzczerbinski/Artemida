@@ -4,6 +4,8 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src/graph_converter/graph_converter.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graph_converter/graph_converter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/graph_algorithm/BFS.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/graph_algorithm/BFS.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graph_algorithm/graph_changes.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graph_algorithm/graph_changes.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graph_algorithm/graph.h" isTestSource="false" />

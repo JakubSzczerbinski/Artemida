@@ -19,6 +19,7 @@ int main( int argc, char* args[] ){
     char command[100];
     while(visual_graph_viewer_update(vgv) && !quit){
         scanf("%s", &command);
+        //CREATE
         if(strcmp(command, "create") == 0){
             graph_dispose(current_graph);
             current_graph = graph_create();
@@ -30,26 +31,34 @@ int main( int argc, char* args[] ){
                 spacing_simulator_step(ss);
             }
         }
+
+        //DFS
         if(strcmp(command, "DFS") == 0){
             if(current_graph == NULL){
                 printf("No graph loaded");
                 continue;
             }
-            printf("Type starting vertex index");
+            printf("Type starting vertex index ");
             unsigned a;
             scanf("%u", &a);
             changes = DFS(current_graph, a);
         }
+
+        //PLAY
         if(strcmp(command, "play") == 0){
             if(changes == NULL){
-                printf("You need to run an algorithm first");
+                printf("You need to run an algorithm first\n");
                 continue;
             }
             play_with_speed(vgv, changes, 1.0);
         }
+
+        //QUIT
         if(strcmp(command, "quit") == 0){
             quit = 1;
         }
+
+        //RESET
         if(strcmp(command, "reset") == 0){
             if(current_graph == NULL){
                 printf("No graph loaded");

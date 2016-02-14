@@ -30,11 +30,11 @@ void DFS_execute(graph* g, unsigned int starting_v, DFS_data* d){
     gc1->action = SET_VERTEX_COLOR;
     gc1->id = starting_v;
     gc1->color = make_Color32(0, 255, 0, 255);
-    printf("DFS v%d\n", gc1->id);
+    printd("DFS v%d\n", gc1->id);
     linked_list_add(d->changes, gc1);
     for(node* i = nl->first;i != NULL;i = i->next){
         neighbour* n = i->element;
-        printf("XD%d\n", n->neghbour_id);
+        printd("DFS n%d\n", n->neghbour_id);
         if(d->visited[n->neghbour_id] == 0) {
             graph_change* gc2 = malloc(sizeof(*gc2));
             gc2->action = SET_EDGE_COLOR;

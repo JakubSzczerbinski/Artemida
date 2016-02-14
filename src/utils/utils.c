@@ -36,9 +36,12 @@ vector_2d make_vector_2d(float x, float y){
 }
 
 void debug(char* cstr){
+#ifdef DEBUG
     printf(cstr);
     fflush(stdout);
+#endif
 }
+
 
 vector_2d add_vector(vector_2d a, vector_2d b) {
     vector_2d result;

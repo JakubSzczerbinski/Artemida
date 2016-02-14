@@ -15,7 +15,6 @@ visual_graph* graph_to_visual_graph(graph *g) {
         vertices[i] = v;
         string_set(v->name, int_to_string(v->id));
         visual_graph_add_vertex(result, v);
-        //printf("%d\n", i);
     }
     for(int i = 1;i <= g->number_of_vertices;i++){
         linked_list* nl = g->neighbourhood_list[i];
@@ -24,7 +23,6 @@ visual_graph* graph_to_visual_graph(graph *g) {
             if(i > n->neghbour_id)continue;
             visual_edge* e = visual_edge_init(vertices[i], vertices[n->neghbour_id], default_color, NULL, 0, string_init());
             visual_graph_add_edge(result, e);
-            printf("%d\n", i);
         }
     }
     return result;
