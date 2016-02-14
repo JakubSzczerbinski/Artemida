@@ -58,6 +58,7 @@ visual_graph_viewer*  visual_graph_viewer_init(const char* title){
 }
 
 int visual_graph_viewer_update(visual_graph_viewer* vgv){
+    int font_offset = -4;
     SDL_SetRenderDrawColor(vgv->renderer, 0, 0, 0, 255);
     SDL_RenderClear( vgv->renderer );
     linked_list* llv = vgv->g->vertices;
@@ -70,6 +71,14 @@ int visual_graph_viewer_update(visual_graph_viewer* vgv){
         visual_vertex *v = (visual_vertex *) i->element;
         filledCircleColor(vgv->renderer, v->position.x, v->position.y, 10, v->color.rgba);
         aacircleColor(vgv->renderer, v->position.x, v->position.y, 10, v->color.rgba);
+    }
+    for(node* i = lle->first;i != NULL;i = i->next){
+        visual_edge* e = (visual_edge*)i->element;
+        if(e->name->size != 0) stringRGBA(vgv->renderer, ((e->v1->position.x+e->v2->position.x)/2)+font_offset, ((e->v1->position.y+ e->v2->position.y)/2)+font_offset, e->name->tab, 255, 255, 255, 255);
+    }
+    for(node* i = llv->first; i != NULL; i = i->next) {
+        visual_vertex *v = (visual_vertex *) i->element;
+        if(v->name->size != 0) stringRGBA(vgv->renderer, v->position.x+font_offset, v->position.y+font_offset, v->name->tab, 255, 255, 255, 255);
     }
     SDL_RenderPresent(vgv->renderer);
     return visual_graph_viewer_handle_events(vgv);

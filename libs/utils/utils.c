@@ -4,6 +4,7 @@
 
 #include <stdio.h>
 #include <math.h>
+#include <string.h>
 #include "utils.h"
 
 string* string_init(){
@@ -11,6 +12,11 @@ string* string_init(){
     s->size = 0;
     s->tab = NULL;
     return s;
+}
+
+void string_set(string* s, char* cstr){
+    s->size = strlen(cstr);
+    s->tab = cstr;
 }
 
 Color32 make_Color32(unsigned int r, unsigned int g, unsigned int b, unsigned int a){
@@ -69,4 +75,10 @@ vector_2d multiply_vector(vector_2d a, float factor) {
 void debug_vector2d(vector_2d a, char* cstr) {
     printf(cstr);
     printf(" vector is equal to (%f,%f)\n" , a.x, a.y);
+}
+
+char *int_to_string(int a) {
+    char* str = malloc(sizeof(char)*15);
+    sprintf(str, "%d", a);
+    return str;
 }

@@ -15,7 +15,7 @@ visual_edge* visual_edge_init(visual_vertex* v1, visual_vertex* v2, Color32 colo
     e->flags = flags;
     e->name = name;
     static unsigned int id = 1;
-    e->id = id;
+    e->id = (v1->id<<16) + v2->id;
     id++;
     return e;
 }

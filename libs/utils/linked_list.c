@@ -105,3 +105,12 @@ int default_comparator(void *a, void *b) {
     if(a == b)return 1;
     return 0;
 }
+
+void dispose(linked_list *ll) {
+    if(ll == NULL)return;
+    for(node* i = ll->first;i != NULL;){
+        free(i->element);
+        i = i->next;
+        free(i->previous);
+    }
+}

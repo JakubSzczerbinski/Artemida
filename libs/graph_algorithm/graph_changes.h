@@ -9,7 +9,7 @@
 
 typedef struct graph_change{
     unsigned int action;
-    int id;
+    unsigned int id;
     union{
         Color32 color;
         char* str;

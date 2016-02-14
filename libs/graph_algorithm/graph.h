@@ -16,11 +16,15 @@ typedef struct graph{
 }graph;
 
 typedef struct neighbour{
-    int neghbour_id;
+    unsigned int neghbour_id;
     int weight;
 }neighbour;
 
 extern graph* graph_init();
+
+extern void graph_dispose(graph* g);
+
+graph* graph_create();
 
 extern void graph_deserialize(graph* g, FILE* f);
 

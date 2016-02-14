@@ -9,10 +9,12 @@
 
 typedef struct string{
     char* tab;
-    int size;
+    unsigned int size;
 }string;
 
 extern string* string_init();
+
+void string_set(string* s, char* cstr);
 
 typedef struct vector_2d{
     float x;
@@ -54,5 +56,7 @@ typedef struct Color32{
 extern Color32 make_Color32(unsigned int r, unsigned int g, unsigned int b, unsigned int a);
 
 extern void debug(char* cstr);
+
+extern char* int_to_string(int a);
 
 #endif //ARTEMIDA_UTILS_H

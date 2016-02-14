@@ -13,6 +13,7 @@ visual_graph* graph_to_visual_graph(graph *g) {
         vertices[i] = malloc(sizeof(*vertices[i]));
         visual_vertex* v = visual_vertex_init(i, default_color, NULL, 0, string_init(), make_vector_2d(i*10, rand()%400));
         vertices[i] = v;
+        string_set(v->name, int_to_string(v->id));
         visual_graph_add_vertex(result, v);
         //printf("%d\n", i);
     }

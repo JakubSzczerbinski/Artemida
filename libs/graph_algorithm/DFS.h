@@ -8,6 +8,6 @@
 #ifndef ARTEMIDA_DFS_H
 #define ARTEMIDA_DFS_H
 
-linked_list* DFS(graph* g, int starting_v);
+linked_list* DFS(graph* g, unsigned int starting_v);
 
 #endif //ARTEMIDA_DFS_H
