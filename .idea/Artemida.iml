@@ -2,38 +2,38 @@
 <module type="CPP_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/graph_converter/graph_converter.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/graph_converter/graph_converter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/graph_algorithm/graph_changes.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/graph_algorithm/graph_changes.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/graph_algorithm/graph.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/graph_algorithm/DFS.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/graph_algorithm/graph.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/graph_algorithm/DFS.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/vg/visual_graph_viewer.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/vg/visual_edge.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/vg/play_changes.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/vg/visual_vertex.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/vg/visual_vertex.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/vg/visual_graph.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/vg/spacing_simulator.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/vg/visual_edge.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/vg/visual_graph_viewer.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/vg/play_changes.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/vg/spacing_simulator.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/vg/visual_graph.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/SDL2_gfx-1.0.1/SDL2_gfxPrimitives.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/SDL2_gfx-1.0.1/SDL2_gfxPrimitives.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/utils/utils.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/utils/queue.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/utils/vector.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/utils/utils.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/utils/queue.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/utils/vector.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/utils/linked_list.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/utils/linked_list.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main.c" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/libs/SDL2_gfx-1.0.1/SDL2_gfxPrimitives.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/libs/SDL2_gfx-1.0.1/SDL2_gfxPrimitives.c" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/libs/graph_algorithm/graph_changes.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/libs/graph_algorithm/graph_changes.c" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/libs/graph_algorithm/graph.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/libs/graph_algorithm/DFS.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/libs/graph_algorithm/graph.c" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/libs/graph_algorithm/DFS.c" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/libs/graph_converter/graph_converter.c" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/libs/graph_converter/graph_converter.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/libs/vg/visual_graph_viewer.c" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/libs/vg/visual_edge.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/libs/vg/play_changes.c" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/libs/vg/visual_vertex.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/libs/vg/visual_vertex.c" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/libs/vg/visual_graph.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/libs/vg/spacing_simulator.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/libs/vg/visual_edge.c" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/libs/vg/visual_graph_viewer.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/libs/vg/play_changes.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/libs/vg/spacing_simulator.c" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/libs/vg/visual_graph.c" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/libs/utils/utils.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/libs/utils/queue.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/libs/utils/vector.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/libs/utils/utils.c" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/libs/utils/queue.c" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/libs/utils/vector.c" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/libs/utils/linked_list.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/libs/utils/linked_list.c" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/bin" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />

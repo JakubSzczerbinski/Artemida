@@ -1,16 +1,13 @@
 #include<stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "libs/vg/visual_graph.h"
-#include "libs/vg/visual_graph_viewer.h"
-#include "libs/vg/visual_vertex.h"
-#include "libs/vg/visual_edge.h"
-#include "libs/SDL2_gfx-1.0.1/SDL2_gfxPrimitives.h"
-#include "libs/vg/spacing_simulator.h"
-#include "libs/graph_algorithm/graph.h"
-#include "libs/graph_converter/graph_converter.h"
-#include "libs/graph_algorithm/DFS.h"
-#include "libs/vg/play_changes.h"
+#include "src/vg/visual_graph.h"
+#include "src/graph_algorithm/graph.h"
+#include "src/vg/visual_graph_viewer.h"
+#include "src/graph_converter/graph_converter.h"
+#include "src/vg/spacing_simulator.h"
+#include "src/graph_algorithm/DFS.h"
+#include "src/vg/play_changes.h"
 
 
 int main( int argc, char* args[] ){
