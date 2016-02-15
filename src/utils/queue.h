@@ -24,4 +24,6 @@ int queue_is_empty(queue *q);
 
 void queue_dispose(queue *q);
 
+void queue_sort(queue *q, int (*comparator)(void*, void*));
+
 #endif //ARTEMIDA_QUEUE_H

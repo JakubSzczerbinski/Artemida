@@ -24,4 +24,5 @@ extern void linked_list_dispose(linked_list* ll);
 extern int default_comparator(void* a, void* b);
 extern void dispose(linked_list* ll);
 
+
 #endif //ARTEMIDA_LINKED_LIST_H

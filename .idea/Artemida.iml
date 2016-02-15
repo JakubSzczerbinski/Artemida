@@ -7,8 +7,10 @@
       <sourceFolder url="file://$MODULE_DIR$/src/graph_algorithm/BFS.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graph_algorithm/BFS.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graph_algorithm/graph_changes.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/graph_algorithm/Prim.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graph_algorithm/graph_changes.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graph_algorithm/graph.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/graph_algorithm/Prim.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graph_algorithm/DFS.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graph_algorithm/graph.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graph_algorithm/DFS.c" isTestSource="false" />

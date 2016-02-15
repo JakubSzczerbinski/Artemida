@@ -83,7 +83,7 @@ int linked_list_contains(linked_list *ll, void *element){
 }
 
 void linked_list_delete_list(linked_list* ll){
-    free(ll);
+    //free(ll);
     return;
 }
 
@@ -106,11 +106,3 @@ int default_comparator(void *a, void *b) {
     return 0;
 }
 
-void dispose(linked_list *ll) {
-    if(ll == NULL)return;
-    for(node* i = ll->first;i != NULL;){
-        free(i->element);
-        i = i->next;
-        free(i->previous);
-    }
-}

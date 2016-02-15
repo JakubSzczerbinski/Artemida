@@ -8,6 +8,8 @@
 #include "src/vg/spacing_simulator.h"
 #include "src/graph_algorithm/DFS.h"
 #include "src/vg/play_changes.h"
+#include "src/graph_algorithm/BFS.h"
+#include "src/graph_algorithm/Prim.h"
 
 
 int main( int argc, char* args[] ){
@@ -42,6 +44,27 @@ int main( int argc, char* args[] ){
             unsigned a;
             scanf("%u", &a);
             changes = DFS(current_graph, a);
+        }
+
+        //BFS
+        if(strcmp(command, "BFS") == 0){
+            if(current_graph == NULL){
+                printf("No graph loaded");
+                continue;
+            }
+            printf("Type starting vertex index ");
+            unsigned a;
+            scanf("%u", &a);
+            changes = BFS(current_graph, a);
+        }
+
+        //PRIM
+        if(strcmp(command, "Prim") == 0){
+            if(current_graph == NULL){
+                printf("No graph loaded");
+                continue;
+            }
+            changes = Prim(current_graph);
         }
 
         //PLAY
