@@ -1,0 +1,45 @@
+
+Komendy:
+
+create - pozwala stworzyc graf	(Komenda obsluguje grafy skierowane, jednak wyswietalnie ich 
+				nie jest zaimplementowane)
+reset - resetuje stworzony graf
+prim - wykonuje algorytm prima na grafie
+BFS - wykonuje algorytm BFS na grafie
+DFS - wykonuje algorytm DFS na grafie
+play - 'odtwarza' zmiany na grafie wykonane przez algorytm
+quit - zakancza dzialanie programu
+
+Przyklady uzycie komendy create:
+
+create
+Number of vertices :
+2
+Number of edges :
+1
+Does your graph need weights ?(Y/N, deufalt=N)
+N
+Type vertex index
+End list of neighbours with 0 (Vertices are indexed from 1)
+1 : 2 0
+2 : 1 0
+
+Uzycie komendy create z tymi danymi tworzy graf o dwoch wierzchokach i krawedzi nieskierowanej z waga jeden miedzy nimi
+
+create
+Number of vertices :
+3
+Number of edges :
+3
+Does your graph need weights ?(Y/N, deufalt=N)
+Y
+Type vertex index and edge weights
+End list of neighbours with 0 (Vertices are indexed from 1)
+1 : 2 3 3 2 0 0
+2 : 1 3 3 8 0 0
+3 : 2 8 1 2 0 0
+
+Uzycie komendy create z tymi danymi tworzy graf o trzech wierzchokach i trzech krawedziach nieskierowanej z wagami odpowiednio miedzy 1 a 2 waga 3; 2 a 3 waga 8; 1 a 3 waga 2
+
+Uzycie innych komend jest intuicyjne i wydaje sie ze nie wymaga wyjasnienia
+

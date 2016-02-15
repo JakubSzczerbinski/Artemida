@@ -1,0 +1,12 @@
+Glowna struktura w moim programie jest visual_graph_viewer trzyma on dane potrzebne do wyswietlania. Sa to struktury SDLa oraz visual_graph. Wywolujac funkcje visual_graph_viewer update na visual_graph_viewer rysujemy zawartosc okna oraz obslugujemy SDL_Event.
+
+visual_graph to struktura ktora trzyma informacje o grafie potrzebne do wyswietlania. Jej najwazniejsze elementy to dwie listy: wierzcholkow i krawedzi, kazdy element z tych list odpowiada jednemu wyswietlanemu elementowi.
+
+Natomiast inna struktura - graph jest uzywana przez algorytmy, zawiera informacje o ilosci krawedzi i wierzcholkow
+
+Jak nastepuje konwersja z graph do visual_graph ?
+Konwersja jest dosc prosta wylaczajac samo umiejscowienie wierzcholkow na plaszczyznie. Dlateog napisalem funkcje spacing simulator ktora przeprowadza prosta symulacja w celu odpowiedniego rozmieszczenia wierzcholkow
+
+Algorytmy grafowe, aby mozna bylo zobaczyc ich rezultat, zwracaja liste graph_changes. Lista ta jest uzywana przez funkcje play_with_speed do odzwierciedlenia dzialania grafu.
+
+ 

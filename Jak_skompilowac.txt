@@ -1,0 +1,9 @@
+Moj projekt jest projektem cmake, wiec mozna go skompilowac za pomoca polecenia 
+
+cmake CmakeLists.txt
+
+Trzeba pamietac o zainstalowaniu bibliotek, ktore wykorzystuje
+
+sdl2
+sdl2_gfx
+

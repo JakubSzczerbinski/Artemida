@@ -59,7 +59,7 @@ int main( int argc, char* args[] ){
         }
 
         //PRIM
-        if(strcmp(command, "Prim") == 0){
+        if(strcmp(command, "prim") == 0){
             if(current_graph == NULL){
                 printf("No graph loaded");
                 continue;

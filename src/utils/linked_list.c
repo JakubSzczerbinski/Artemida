@@ -7,7 +7,7 @@
 #include "linked_list.h"
 
 linked_list* linked_list_init(int (*comparator)(void*, void*)){
-    linked_list* ll = malloc(sizeof(ll));
+    linked_list* ll = malloc(sizeof(*ll));
     assert(ll != NULL);
     ll->first = NULL;
     ll->last = NULL;
